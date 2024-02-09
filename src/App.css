@@ -1,0 +1,198 @@
+body{
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;  
+  background: linear-gradient(rgb(35, 35, 36), rgb(32, 32, 32));
+}
+
+.tela{
+  width: 100vw;
+  height: 100vh;  
+  background: linear-gradient(rgb(35, 35, 36), rgb(32, 32, 32));
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+}
+
+#logo {
+  width: 35vw;
+  align-self: center;
+  margin-bottom: 1vw;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  z-index: 0; 
+}
+
+.cards{  
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 1vw;
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+}
+
+
+.telaPersonagem{
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  width: 90%;
+}
+
+.titulo{
+  font-size: 2vw;
+  font-weight: bold;
+  color: wheat;
+  margin-left: 4vw;
+}
+
+.personagens{  
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.8vw;
+}
+
+
+.card{  
+  border-radius: 0.5vw;
+  width: 100%;  
+  height: auto;
+  margin-top: 0.5vw;
+  display: flex;
+  cursor: pointer;
+  border: solid 0.3vw rgba(0, 0, 0, 0.708);
+  filter: grayscale(100%); overflow: hidden;
+  margin-left: 2vw;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  border: solid 0.3vw red !important;
+  filter: grayscale(0%) !important;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 1vw;
+}
+
+
+.selecao{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;  
+  height: 32vw;
+  justify-items: center;  
+  align-items: center;
+  background-image: url('./assets/img/fundos/branco.png');
+  border-radius: 1vw;
+  background-size: cover;
+  border: solid 0.4vw wheat;
+  overflow: hidden;
+}
+
+.selecao img{
+  width: 60%;
+}
+
+.selecao .principal{
+  width: 85%;
+}
+
+.selecao h2, .selecao h4{
+  color: rgb(45, 37, 37);
+  text-align: center;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.selecao h2{
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+.selecao h4{
+  font-size: 1.1vw;
+}
+
+#nomePersonagem{
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
+.aliados{
+  background-color: rgba(245, 222, 179, 0.448);
+  margin-right: 2vw;
+  border-radius: 1vw;
+  border: solid 0.3vw wheat;
+  width: 100%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.cardAliados{
+  display: flex;
+  flex-direction: row;
+  text-align: center; 
+  margin-bottom: 1vw;
+}
+
+.parceirosHover:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#botaoHistoria, #botaoIniciar{
+  border: solid 0.3vw rgb(219, 197, 160);
+  border-radius: 0.5vw;
+  width: 5vw;
+  height: 2vw;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.808);
+  font-size: 1vw;
+  color: rgb(175, 157, 123);
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+#botaoHistoria:hover,  #botaoIniciar:hover{
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+
+#atirador, #maga, #arqueiro, #feiticeiro{
+  background-image: url('./assets/img/fundos/atirador.png');
+  background-size: cover;
+}
+
+#espantalho, #cleriga, #minotauro{
+  background-image: url('./assets/img/fundos/tanque.png');
+  background-size: cover;
+}
+
+#cantora, #boneca, #besta{
+  background-image: url('./assets/img/fundos/suporte.png');
+  background-size: cover;
+}
+
+#sereia, #cavaleiro, #monge, #ladra{
+  background-image: url('./assets/img/fundos/lutador.png');
+  background-size: cover;
+}
+
+#ninja, #espia{
+  background-image: url('./assets/img/fundos/assassino.png');
+  background-size: cover;
+}
