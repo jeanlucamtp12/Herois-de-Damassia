@@ -1,3 +1,5 @@
+import {rostoArqueiro, rostoAtirador, rostoCavaleiro, rostoCleriga, rostoSereia, rostoBoneca, rostoMaga, rostoMinotauro, rostoEspantalho, rostoCantora, rostoBesta, rostoLadra, rostoFeiticeiro, rostoNinja, rostoMonge, rostoEspia} from './assets/img/imagens'
+
 export interface Personagem {
     id: string,
     nome: string,
@@ -21,7 +23,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'atirador',
         nome: 'Paulo - O Atirador',
-        imagem: './src/assets/img/rostos/atirador.png',
+        imagem: rostoAtirador,
         passiva: 'Rajada de Balas - O atirador dispara uma rajada de balas em um alvo inimigo, causando dano igual a 30.',
         hp: 90,
         atk: 25,
@@ -34,7 +36,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'cavaleiro',
         nome: 'Sir. Victor - Cavaleiro',
-        imagem: './src/assets/img/rostos/cavaleiro.png',
+        imagem: rostoCavaleiro,
         passiva: 'Golpe da Redenção - O cavaleiro desfere um golpe poderoso que causa causa 50 de dano a um inimigo, porem recebe 25 de dano de recuo.',
         hp: 110,
         atk: 20,
@@ -46,7 +48,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'arqueiro',
         nome: 'Jamile"s - Arqueiro',
-        imagem: './src/assets/img/rostos/arqueiro.png',
+        imagem: rostoArqueiro,
         passiva: 'Flecha de Fogo - A arqueiro lança uma flecha de fogo que queima um inimigo, causando 10 de dano e o deixando queimando por dois turnos, perdendo 10 de HP adicionais a cada turno.',
         hp: 90,
         atk: 25,
@@ -58,7 +60,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'cleriga',
         nome: 'Laura - A Cleriga',
-        imagem: './src/assets/img/rostos/cleriga.png',
+        imagem: rostoCleriga,
         passiva: 'Escudo Divino - A cleriga invoca um escudo divino que absorve 20 de dano para si mesma.',
         hp: 150,
         atk: 5,
@@ -70,11 +72,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'sereia',
         nome: 'Elyana - A Sereia',
-        imagem: './src/assets/img/rostos/sereia.png',
+        imagem: rostoSereia,
         passiva: 'Onda de Impacto - A sereia lança uma onda de impacto que causa 15 de dano a todos os inimigos.',
         hp: 120,
         atk: 15,
-
+        
         parceiro1: 'espia',
         parceiro2: 'boneca',
     },
@@ -82,11 +84,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'boneca',
         nome: 'Tatiane - A Lutadora',
-        imagem: './src/assets/img/rostos/boneca.png',
+        imagem: rostoBoneca,
         passiva: 'Motivação - A lutadora motiva um aliado, aumentando seu ataque em 10.',
         hp: 120,
         atk: 15,
-
+        
         parceiro1: 'sereia',
         parceiro2: 'espia',
     },
@@ -94,7 +96,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'maga',
         nome: 'Emilly - Maga',
-        imagem: './src/assets/img/rostos/maga.png',
+        imagem: rostoMaga,
         passiva: 'Invocação Arcana - A maga convoca uma tempestade mágica que atinge todos os inimigos, causando 10 pontos de dano.',
         hp: 100,
         atk: 20,
@@ -106,7 +108,7 @@ export const Personagens: Personagem[] = [
     {
         id: 'minotauro',
         nome: 'Diogus - O Minotauro',
-        imagem: './src/assets/img/rostos/minotauro.png',
+        imagem: rostoMinotauro,
         passiva: 'Investida Poderosa - O minotauro avança com força total contra um inimigo, causando 20 de dano direto.',
         hp: 200,
         atk: 5,
@@ -119,11 +121,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'espantalho',
         nome: 'Wesley - O Espantalho',
-        imagem: './src/assets/img/rostos/espantalho.png',
+        imagem: rostoEspantalho,
         passiva: 'Aterrorizar - O espantalho emite um grito aterrorizante que reduz o ataque de todos os inimigos em 5.',
         hp: 200,
         atk: 5,
-
+        
         parceiro1: 'ladra',
         parceiro2: 'monge',
     },
@@ -132,11 +134,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'cantora',
         nome: 'Sabrina - A Cantora',
-        imagem: './src/assets/img/rostos/cantora.png',
+        imagem: rostoCantora,
         passiva: 'Canção de Cura - A cantora canta uma melodia curativa que restaura 15 de HP para todos os aliados.',
         hp: 150,
         atk: 5,
-
+        
         parceiro1: 'ninja',
         parceiro2: 'feiticeiro',
     },
@@ -145,11 +147,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'besta',
         nome: 'Elvis - O Homem Besta',
-        imagem: './src/assets/img/rostos/besta.png',
+        imagem: rostoBesta,
         passiva: 'Proteção Instintiva - A besta antecipa os ataques do inimigo, consumindo toda sua barra de especial.',
         hp: 180,
         atk: 5,
-
+        
         parceiro1: 'feiticeiro',
         parceiro2: 'ninja',
     },
@@ -158,11 +160,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'ladra',
         nome: 'Sheila - A ladra',
-        imagem: './src/assets/img/rostos/ladra.png',
+        imagem: rostoLadra,
         passiva: 'Furtividade - A ladra se camufla nas sombras, tornando-se invulnerável por 2 turno e recuperando 20 pontos de vida.',
         hp: 110,
         atk: 20,
-
+        
         parceiro1: 'monge',
         parceiro2: 'espantalho',
     },
@@ -170,11 +172,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'feiticeiro',
         nome: 'Ventus - Feiticeiro',
-        imagem: './src/assets/img/rostos/feiticeiro.png',
+        imagem: rostoFeiticeiro,
         passiva: 'Explosão Arcana - O feiticeiro conjura uma explosão mágica que atinge todos os inimigos, causando 25 de dano a cada um.',
         hp: 100,
         atk: 20,
-
+        
         parceiro1: 'ninja',
         parceiro2: 'cantora',
     },
@@ -182,11 +184,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'ninja',
         nome: 'Ayame - O Ninja',
-        imagem: './src/assets/img/rostos/ninja.png',
+        imagem: rostoNinja,
         passiva: 'Lâmina Sombria - O ninja se move entre os inimigos, atacando até três alvos diferentes com sua lâmina oculta. Causa 15 de dano a cada alvo e, ao derrotar um inimigo, o ninja recupera 15 pontos de vida.',
         hp: 80,
         atk: 25,
-
+     
         parceiro1: 'feiticeiro',
         parceiro2: 'cantora',
     },
@@ -195,11 +197,11 @@ export const Personagens: Personagem[] = [
     {
         id: 'monge',
         nome: 'Derik - O Monge',
-        imagem: './src/assets/img/rostos/monge.png',
+        imagem: rostoMonge,
         passiva: 'Zen Interior - O monge alcança um estado de tranquilidade interior, restaurando 20 de HP e aumentando seu ataque em 5.',
         hp: 180,
         atk: 10,
-
+        
         parceiro1: 'espantalho',
         parceiro2: 'ladra',
     },
@@ -208,10 +210,10 @@ export const Personagens: Personagem[] = [
         id: 'espia',
         nome: 'Anabella - A Espiã',
         passiva: 'Disfarce - A espiã se disfarça como um aliado, atraindo todos os golpes dos inimigos por 2 turnos, alterando qualquer dano recebido para 10 pontos.',
-        imagem: './src/assets/img/rostos/espia.png',
+        imagem: rostoEspia,
         hp: 80,
         atk: 15,
-
+        
         parceiro1: 'sereia',
         parceiro2: 'boneca',
     },
