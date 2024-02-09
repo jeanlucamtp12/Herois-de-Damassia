@@ -8,7 +8,7 @@ function LogicaSelecao () {
 
     const [parceiro1, setParceiro1] = useState<Parceiro>({ id: '', nome: '', imagem: imagens.interrogacao });
     const [parceiro2, setParceiro2] = useState<Parceiro>({ id: '', nome: '', imagem: imagens.interrogacao });
-    const [personagemPrincipal, setPersonagemPrincipal] = useState<Personagem>({id:'', nome: 'Informações do Lutador', hp: 0, atk: 0, imagem: './src/assets/img/interrogacao.png', passiva: '', parceiro1:'', parceiro2:''});
+    const [personagemPrincipal, setPersonagemPrincipal] = useState<Personagem>({id:'', nome: 'Informações do Lutador', hp: 0, atk: 0, imagem: imagens.interrogacao, passiva: '', parceiro1:'', parceiro2:''});
     const [personagemFiltrado, setPersonagemFiltrado] = useState<string | null>(null);
 
 
