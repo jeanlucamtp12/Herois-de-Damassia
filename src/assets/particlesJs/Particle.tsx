@@ -2,7 +2,8 @@ import Particles from "react-tsparticles";
 import { loadFull } from 'tsparticles';
 
 function Particle() {
-    const particlesInit = async (main) => {
+
+    const particlesInit = async (main: any) => {
         try {
             await loadFull(main);
         } catch (error) {
@@ -10,8 +11,9 @@ function Particle() {
         }
     };
 
-    const particlesLoaded = (container) =>{
-        //console.log(container)
+    const particlesLoaded = async () => {
+        // Conteúdo da função
+        return Promise.resolve();
     };
 
     return (

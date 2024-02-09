@@ -1,4 +1,3 @@
-import { useState } from "react"
 import LogicaSelecao from "./LogicaSelecao"
 
 function Cartoes() {

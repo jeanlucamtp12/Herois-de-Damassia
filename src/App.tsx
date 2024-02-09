@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import TelaSelecao from './TelaSelecao'
 import './App.css'
 

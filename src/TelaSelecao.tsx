@@ -6,7 +6,7 @@ function TelaSelecao() {
         <div>
             <div className="tela">
                 <img id="logo" src="./src/assets/img/logo.png" />
-                <Particle id="tsparticles" />
+                <Particle />
                 <Cartoes />
             </div>
         </div>
