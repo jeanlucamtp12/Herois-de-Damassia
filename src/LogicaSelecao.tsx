@@ -1,15 +1,17 @@
 import { useState } from "react"
 import TelaPersonagem from "./TelaPersonagem"
 import AtributosPersonagem from "./AtributosPersonagem";
-import {Parceiro, Personagens, Personagem} from './interfaces'
+import { Parceiro, Personagens, Personagem } from './interfaces'
 import * as imagens from './assets/img/imagens'
 
-function LogicaSelecao () {
+function LogicaSelecao() {
 
     const [parceiro1, setParceiro1] = useState<Parceiro>({ id: '', nome: '', imagem: imagens.interrogacao });
     const [parceiro2, setParceiro2] = useState<Parceiro>({ id: '', nome: '', imagem: imagens.interrogacao });
-    const [personagemPrincipal, setPersonagemPrincipal] = useState<Personagem>({id:'', nome: 'Informações do Lutador', hp: 0, atk: 0, imagem: imagens.interrogacao, passiva: '', parceiro1:'', parceiro2:''});
+    const [personagemPrincipal, setPersonagemPrincipal] = useState<Personagem>({ id: '', nome: 'Informações do Lutador', hp: 0, atk: 0, imagem: imagens.interrogacao, passiva: '', parceiro1: '', parceiro2: '', inimigo: ''});
     const [personagemFiltrado, setPersonagemFiltrado] = useState<string | null>(null);
+
+
 
 
     const encontrarParceiro = (id: string) => {
@@ -22,7 +24,7 @@ function LogicaSelecao () {
         const imgParceiro1 = imagens[`${personagem.parceiro1}` as keyof typeof imagens];
         const imgParceiro2 = imagens[`${personagem.parceiro2}` as keyof typeof imagens];
 
-        setPersonagemPrincipal({id:personagem.id, nome: personagem.nome, hp: personagem.hp, atk: personagem.atk, imagem: imagem, passiva: personagem.passiva, parceiro1: personagem.parceiro1, parceiro2: personagem.parceiro2});
+        setPersonagemPrincipal({ id: personagem.id, nome: personagem.nome, hp: personagem.hp, atk: personagem.atk, imagem: imagem, passiva: personagem.passiva, parceiro1: personagem.parceiro1, parceiro2: personagem.parceiro2, inimigo: personagem.inimigo });
 
         const parce1 = encontrarParceiro(personagem.parceiro1);
         const parce2 = encontrarParceiro(personagem.parceiro2);
@@ -57,7 +59,7 @@ function LogicaSelecao () {
     return (
         <div className="cards">
             <TelaPersonagem Personagens={Personagens} exibePersonagem={exibePersonagem} personagemFiltrado={personagemFiltrado} />
-            <AtributosPersonagem exibeParce={exibeParce}  parceiro1={parceiro1} parceiro2={parceiro2}  personagemPrincipal={personagemPrincipal}/>
+            <AtributosPersonagem exibeParce={exibeParce} parceiro1={parceiro1} parceiro2={parceiro2} personagemPrincipal={personagemPrincipal} />
         </div>
     )
 

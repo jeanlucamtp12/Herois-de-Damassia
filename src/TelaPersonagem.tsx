@@ -1,4 +1,4 @@
-import {Personagem} from "./interfaces";
+import { Personagem } from "./interfaces";
 
 
 interface TelaPersonagemProps {
@@ -7,7 +7,7 @@ interface TelaPersonagemProps {
     personagemFiltrado: string | null;
 }
 
-function TelaPersonagem (props: TelaPersonagemProps){
+function TelaPersonagem(props: TelaPersonagemProps) {
 
     return (
 

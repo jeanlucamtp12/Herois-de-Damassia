@@ -18,6 +18,7 @@ export {default as sereia} from './sereia.png'
 export {default as interrogacao} from './interrogacao.png'
 export {default as logo} from './logo.png'
 export {default as loading} from './loading.gif'
+export {default as base} from './base.png'
 
 export {default as rostoArqueiro} from './rostos/arqueiro.png'
 export {default as rostoAtirador} from './rostos/atirador.png'

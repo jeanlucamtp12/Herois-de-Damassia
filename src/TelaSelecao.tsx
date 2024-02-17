@@ -1,18 +1,19 @@
 import Cartoes from './Cartoes'
 import Particle from './assets/particlesJs/Particle';
-import {logo} from './assets/img/imagens'
+import { logo } from './assets/img/imagens'
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
+
 
 function TelaSelecao() {
 
     const [loading, setLoading] = useState(true);
 
-    useEffect (() =>{
+    useEffect(() => {
 
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 6000);
 
     }, []);
 
@@ -25,6 +26,7 @@ function TelaSelecao() {
                 <img id="logo" src={logo} />
                 <Particle />
                 <Cartoes />
+
             </div>
         </div>
 
