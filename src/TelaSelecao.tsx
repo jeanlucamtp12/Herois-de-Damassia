@@ -13,7 +13,7 @@ function TelaSelecao() {
 
         setTimeout(() => {
             setLoading(false);
-        }, 10000);
+        }, 6000);
 
     }, []);
 

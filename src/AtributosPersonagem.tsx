@@ -31,7 +31,7 @@ function AtributosPersonagem(props: AtributosPersonagemProps) {
             setTimeout(() => {
                 setAbrirLoading(false);
                 dispatch(changeInterruptor(false));
-            }, 5000);
+            }, 10000);
         }
     }
 
