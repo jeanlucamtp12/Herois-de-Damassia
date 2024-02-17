@@ -6,7 +6,7 @@ import { selectInterruptor } from "./redux/slice";
 
 function App() {
 
-  const interruptor = useSelector(selectInterruptor)
+  const interruptor = useSelector(selectInterruptor);
 
   return (
     <div>

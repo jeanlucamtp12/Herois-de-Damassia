@@ -27,10 +27,10 @@ function AtributosPersonagem(props: AtributosPersonagemProps) {
         if (props.personagemPrincipal.id != '') {
             setAbrirLoading(true);
             dispatch(changeNome(props.personagemPrincipal.id));
-
+            dispatch(changeInterruptor(false));
+            
             setTimeout(() => {
                 setAbrirLoading(false);
-                dispatch(changeInterruptor(false));
             }, 10000);
         }
     }
